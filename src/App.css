@@ -1,0 +1,311 @@
+@font-face {
+  font-family: orbitron;
+  src: url(./fonts/Orbitron-Regular.ttf);
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: orbitron;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.footer_section{
+  padding:40px 0px 0px 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .background_hero {
+    width: 80% !important;
+  }
+
+  .subtitle_text {
+    width: 80% !important;
+  }
+
+  .navigation_buttons {
+    width: 80% !important;
+  }
+
+  .mobile_logo {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .background_hero {
+    width: 100% !
+  }
+
+  .subtitle_text {
+    width: 100% 
+  }
+  
+
+  .navigation_buttons {
+    width: 100% 
+  }
+
+  .mobile_logo {
+    width: 100% 
+  }
+
+  .faq_gif {
+    height: 450px !important;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .background_hero {
+    background: url(./img/header/Bad_Eggs_Desktop.png);
+    border: 3px solid;
+    /* This will work but yield a wrong result: */
+    border-image: linear-gradient(0deg, rgb(0, 255, 163), rgb(3, 225, 255), rgb(220, 31, 255), rgb(16, 25, 33)) 1;
+    animation: 10s rotate linear infinite;
+    margin-top: 25px !important;
+  }
+
+  .navigation_buttons a img {
+    height: 75px;
+  }
+
+
+  .mobile_view {
+    display: none;
+  }
+
+  .desktop_view {
+    display: block;
+  }
+
+  .logo_image {
+    width: 100% !important;
+  }
+
+  .mobile_logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .background_hero {
+    background: url(./img/header/Bad_Eggs_Mobile.png);
+    margin-top: 0;
+  }
+
+  .navigation_buttons a img {
+    height: 45px;
+  }
+
+  .navigation_buttons {
+    justify-content: center !important;
+    padding: .5rem;
+  }
+
+  .subtitle_text {
+    padding: .5rem;
+  }
+
+
+  .mobile_view {
+    display: block;
+  }
+
+  .mobile_logo {
+    display: block;
+  }
+
+  .desktop_view {
+    display: none;
+  }
+
+  .logo_image {
+    height: 55px;
+  }
+}
+
+.background_hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  width: 65%;
+  height: 650px;
+}
+
+.background_hero_wrapper {
+  position: relative;
+}
+
+.mint_button {
+  max-width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+  cursor: pointer;
+}
+
+.about_mint_button {
+  height: 75px;
+}
+
+.faq_mint_button {
+  height: 75px;
+}
+
+.subtitle_text {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.subtitle_text h1 {
+  font-size: 24px;
+}
+
+.subtitle_text p {
+  margin-top: .5rem;
+}
+
+.navigation_buttons {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  /* display: flex;
+  justify-content: center; */
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.desktop_view>.wrapper>.left {
+  padding: .5rem;
+}
+
+.desktop_view>.wrapper>.right {
+  padding: .5rem;
+}
+
+.first_part {
+  margin-top: 1rem;
+}
+
+.eggs {
+  padding: 1rem .5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eggs>div {
+  flex-basis: 25%;
+}
+
+.eggs>div>img {
+
+  border: 1px solid;
+  /* This will work but yield a wrong result: */
+  border-image: linear-gradient(0deg, rgb(0, 255, 163), rgb(3, 225, 255), rgb(220, 31, 255), rgb(16, 25, 33)) 1;
+  animation: 10s rotate linear infinite;
+}
+
+h3 {
+  font-size: 22px;
+  text-shadow: 1px 1px red;
+}
+
+h4 {
+  font-size: 20px;
+  text-shadow: 1px 1px red;
+}
+
+h1 {
+  text-shadow: 1px 1px red;
+}
+
+.second_part h4 {
+  margin-top: 1rem;
+}
+
+.second_part {
+  margin-top: 1rem;
+}
+
+.right .first_part {
+  margin-top: 1rem;
+}
+
+.right .first_part h3 {
+  margin-top: 1rem;
+}
+
+.logo_subtitle h4 {
+  margin-top: 1rem;
+}
+
+.right .first_part p {
+  margin-top: .5rem;
+}
+
+.about_gif {
+  margin-top: 2rem;
+
+  border: 1px solid;
+  /* This will work but yield a wrong result: */
+  border-image: linear-gradient(0deg, rgb(0, 255, 163), rgb(3, 225, 255), rgb(220, 31, 255), rgb(16, 25, 33)) 1;
+  animation: 10s rotate linear infinite;
+}
+
+.faq_gif {
+  margin-top: 2rem;
+  height: 650px;
+  border: 1px solid;
+  /* This will work but yield a wrong result: */
+  border-image: linear-gradient(0deg, rgb(0, 255, 163), rgb(3, 225, 255), rgb(220, 31, 255), rgb(16, 25, 33)) 1;
+  animation: 10s rotate linear infinite;
+}
+
+.desktop_view>.wrapper {
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+}
+
+.right {
+  flex-basis: 50%;
+}
+
+.logo_subtitle h3 {
+  margin-top: 1rem;
+}
+
+.logo_subtitle p {
+  margin-top: .5rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
