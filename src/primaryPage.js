@@ -10,13 +10,13 @@ export default function primaryPage() {
     <div>
       <nav className="transparent navigation_buttons row">
           <div className="col s12 l4 z-depth-3">
-            <a href="/about"><img src={aboutImg} /></a>
+            <a href="/about#about"><img src={aboutImg} /></a>
           </div>
           <div className="col s12 l4 z-depth-3">
-            <a href="/faq"><img src={faqImg} /></a>
+            <a href="/faq#faq"><img src={faqImg} /></a>
           </div>
           <div className="col s12 l4 z-depth-3">
-            <a href="/roadmap"><img src={roadmapImg} /></a>
+            <a href="/roadmap#roadmap"><img src={roadmapImg} /></a>
           </div>
       </nav>
         <div className="backgrond_hero_wrapper">
@@ -24,8 +24,8 @@ export default function primaryPage() {
 
           <div className="background_hero">
           </div>
-        <img src={mintImg} className="mint_button" onClick={()=>{alert('Minting NFT');} }/>
-      </div>
+          <img src={mintImg} className="mint_button" onClick={()=>{alert('Minting NFT');} }/>
+        </div>
       <div className="subtitle_text">
           <h1>Welcome to the Bad Eggs Institute</h1>
           <p>Click the red button above to run the Eggstractor and mint your Bad Egg or see below more info!</p>
