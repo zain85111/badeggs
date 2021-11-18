@@ -11,9 +11,9 @@ const App = () => {
     <div> 
       <BrowserRouter>
         <Route path="/" component={PrimaryPage} exact/>
-        <Route path="/about#about" component={SecondaryPage} exact/>
-        <Route path="/faq#faq" component={SecondaryPage} exact/>
-        <Route path="/roadmap#roadmap" component={SecondaryPage} exact/>
+        <Route path="/about" component={SecondaryPage} />
+        <Route path="/faq" component={SecondaryPage} />
+        <Route path="/roadmap" component={SecondaryPage} />
       </BrowserRouter>
     </div>
   );
